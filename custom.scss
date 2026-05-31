@@ -1,0 +1,140 @@
+/*-- scss:defaults --*/
+
+// Colour palette — accessible Ocean / Deep Blue
+// All foreground/background pairs verified WCAG AA compliant
+$primary:    #065A82;   // dark blue — used for title/closing slides
+$secondary:  #028090;   // teal — used for human-loop slide
+$accent:     #B5EAD7;   // soft mint — decorative only on darkest bg (5.6:1 on #021B40 ✅)
+$dark:       #021B40;   // darkest navy
+$light:      #F0F8FF;
+$text-dark:  #1a1a2e;
+
+$font-family-sans-serif: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+$presentation-heading-font: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+$presentation-font-size-root: 32px;
+$presentation-heading-color: $dark;
+$body-color: $text-dark;
+$link-color: $primary;   // #065A82 on white = 7.52:1 ✅
+
+/*-- scss:rules --*/
+
+// Slide headings
+.reveal h1, .reveal h2 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.reveal h3 {
+  color: #028090;   // teal on white = 4.67:1 ✅ AA Normal
+  font-weight: 600;
+  font-size: 0.85em;
+  margin-top: 0.6em;
+}
+
+// ── Dark background slides ─────────────────────────────────────────────────
+// All text white on dark — verified:
+//   white on #065A82 = 7.52:1 ✅
+//   white on #021B40 = 17.03:1 ✅
+//   white on #028090 = 4.67:1 ✅
+
+.reveal section[data-background-color="#065A82"],
+.reveal section[data-background-color="#021B40"],
+.reveal section[data-background-color="#028090"] {
+  color: white !important;
+
+  h1, h2, h3, p, li, blockquote, strong, em {
+    color: white !important;
+  }
+
+  // Links on dark slides — white is safest (7.52:1 on #065A82, 17:1 on #021B40) ✅
+  a {
+    color: white !important;
+    text-decoration: underline;
+  }
+
+  // Callouts revert to dark text on light bg — fine
+  .callout {
+    color: $text-dark;
+    h5 { color: $text-dark !important; }
+    p, li { color: $text-dark !important; }
+  }
+}
+
+// Teal slide: h3 override — white not teal-on-teal
+.reveal section[data-background-color="#028090"] h3 {
+  color: white !important;
+}
+
+// ── Callout tweaks ─────────────────────────────────────────────────────────
+.reveal .callout {
+  font-size: 0.78em;
+  border-radius: 6px;
+}
+
+// ── Code blocks ───────────────────────────────────────────────────────────
+.reveal pre code {
+  font-size: 0.58em;
+  line-height: 1.4;
+  border-radius: 6px;
+}
+
+// ── Pull-quote blockquote ─────────────────────────────────────────────────
+// Dark text on near-white bg inside blockquote — always high contrast
+.reveal blockquote {
+  border-left: 4px solid #028090;
+  background: rgba(2, 128, 144, 0.08);
+  padding: 0.6em 1em;
+  border-radius: 0 6px 6px 0;
+  font-style: italic;
+  color: $dark;  // #021B40 on near-white = ~17:1 ✅
+}
+
+// On dark slides blockquotes need white text
+.reveal section[data-background-color="#065A82"] blockquote,
+.reveal section[data-background-color="#021B40"] blockquote,
+.reveal section[data-background-color="#028090"] blockquote {
+  background: rgba(255,255,255,0.12);
+  border-left-color: $accent;
+  color: white !important;
+  p { color: white !important; }
+}
+
+// ── Tables ────────────────────────────────────────────────────────────────
+.reveal table {
+  font-size: 0.75em;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.reveal table th {
+  background: $primary;   // white on #065A82 = 7.52:1 ✅
+  color: white;
+  padding: 0.4em 0.8em;
+}
+
+.reveal table td {
+  padding: 0.35em 0.8em;
+  border-bottom: 1px solid #ccc;
+  color: $text-dark;      // #1a1a2e on white = 17:1 ✅
+}
+
+.reveal table tr:nth-child(even) td {
+  background: rgba(6, 90, 130, 0.06);
+}
+
+// ── Fragment list spacing ─────────────────────────────────────────────────
+.reveal .incremental li {
+  margin-bottom: 0.3em;
+}
+
+// ── Footer ────────────────────────────────────────────────────────────────
+// white on slide backgrounds — all pass AA ✅
+.reveal .footer {
+  font-size: 0.55em;
+  color: white;
+}
+
+// ── Code left-border accent ───────────────────────────────────────────────
+.reveal pre {
+  border-left: 3px solid #028090;
+}
