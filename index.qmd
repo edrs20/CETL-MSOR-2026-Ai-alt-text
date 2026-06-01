@@ -47,13 +47,12 @@ format:
 
 ### The scale of the challenge
 
-```
-HELM: Helping Engineers Learn Mathematics
-──────────────────────────────────────────
-50 workbooks
-500+ HTML pages
-924 diagrams & graphs
-```
+**HELM: Helping Engineers Learn Mathematics**
+
+- 50 workbooks
+- 500+ HTML pages
+- 924 diagrams & graphs
+
 
 ::: {.fragment}
 **Zero long descriptions** in the original resource.
@@ -102,28 +101,28 @@ Each image needs **alt text** *and* a **long description** — and manual author
 
 :::::: {.columns}
 
-:::: {.column width="45%"}
+:::: {.column width="40%"}
 
-### The university AI tools weren't an option
+### Difficult with University IT policies and unpredictable costs
 
 - IT policy gives **no command-line or API access** to university AI services
 - Commercial APIs (OpenAI, Gemini) are available — but the cost was difficult to predict
 
 ::: {.callout-warning}
-## How many tokens is a maths diagram?
+### How many tokens is a maths diagram?
 To be honest - I have no idea!
 :::
 
 ::::
 
-:::: {.column width="55%"}
+:::: {.column width="60%"}
 
 ### The local solution
 
 - **Ollama** — run open-source LLMs locally, no API key needed
 - **gemma4** — Google's multimodal model, understands mathematical diagrams
 
-![My graphics card running gemma4 locally](graphics_card.jpg){fig-alt="A consumer graphics card (GPU) sitting on a desk, used to run the gemma4 language model locally via Ollama" width="75%"}
+![Who said gamming was no good for nothing?](graphics_card.jpg){fig-alt="A consumer graphics card (GPU) sitting on a desk, used to run the gemma4 language model locally via Ollama" width="50%"}
 
 ::::
 
@@ -171,7 +170,8 @@ The LLM prompt was structured around guidelines from the **DIAGRAM Centre's POET
 
 ## The Script: Prompting the Model 
 
-Getting reliable, structured output from an LLM requires careful use of **system prompts, user prompts, and JSON mode** together:
+**Problem**: Getting reliable, structured output from an LLM 
+**Solution**: Use **system prompts, user prompts, and JSON mode**
 
 :::::: {.columns}
 
@@ -196,7 +196,7 @@ accessibility descriptions.
 
 :::: {.column width="50%"}
 
-**User prompt** passes the image and its HTML context — so the model knows whether a graph is illustrating integration or signal processing:
+**User prompt** passes the image and its HTML context. `context` and `png_path` are variables containing the image's HTML and the path to the converted PNG:
 
 ```python
 {"role": "user",
@@ -301,11 +301,13 @@ repairs = [
 ]
 ```
 
+- `\t` - tab
+- `\f` - form feed
+- `\r` - carriage return
+
 ::::
 
 :::: {.column width="50%"}
-
-
 
 
 **Bullet-point → HTML conversion** — the model returns `*`-delimited bullets; the script converts them to a proper `<ul>` list:
@@ -379,7 +381,7 @@ Each long-description page carries a clear notice:
 
 **Anyone can feed back via a Microsoft Form linked on every page:**
 
-1. View the image alongside its generated description
+1. 👀 View the image alongside its generated description
 2. ✅ **Confirm** it is accurate
 3. ✏️ **Suggest an alternative** if the description is wrong or incomplete
 
@@ -453,6 +455,17 @@ Or contact Ed directly:
 | Structured output | Ollama JSON mode |
 | Feedback | Microsoft Forms (per page) |
 | Resource | HELM  |
+
+
+::: {.callout-important}
+## How to contribute
+
+Browse the resource:  
+**[bathmash.github.io/HELM](https://bathmash.github.io/HELM/)**
+
+Or contact Ed directly:  
+**[edrs20@bath.ac.uk](mailto:edrs20@bath.ac.uk)**
+:::
 
 ::::
 

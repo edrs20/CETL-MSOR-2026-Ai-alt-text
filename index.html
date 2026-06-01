@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="helm_alt_text_files/libs/clipboard/clipboard.min.js"></script>
-<script src="helm_alt_text_files/libs/quarto-html/tabby.min.js"></script>
-<script src="helm_alt_text_files/libs/quarto-html/popper.min.js"></script>
-<script src="helm_alt_text_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="helm_alt_text_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="helm_alt_text_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="helm_alt_text_files/libs/quarto-html/quarto-syntax-highlighting-acf12a64177840b8d86f2d4f01b2e9fb.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/tabby.min.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-acf12a64177840b8d86f2d4f01b2e9fb.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.37">
 
   <meta name="author" content="Ed Southwood">
-  <meta name="dcterms.date" content="2026-05-29">
+  <meta name="dcterms.date" content="2026-06-01">
   <title>Locally-Run AI for Accessible Maths</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="helm_alt_text_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="helm_alt_text_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reveal.css">
   <style>
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -99,11 +99,11 @@
     code span.vs { color: #032f62; } /* VerbatimString */
     code span.wa { color: #ff5555; } /* Warning */
   </style>
-  <link rel="stylesheet" href="helm_alt_text_files/libs/revealjs/dist/theme/quarto-d5c4fd62a8404936cb96477def813cbf.css">
-  <link href="helm_alt_text_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="helm_alt_text_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="helm_alt_text_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="helm_alt_text_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-d5c4fd62a8404936cb96477def813cbf.css">
+  <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
     .reveal div.sourceCode {
       margin: 0;
@@ -209,7 +209,7 @@ Ed Southwood
 </div>
 </div>
 
-  <p class="date">2026-05-29</p>
+  <p class="date">2026-06-01</p>
 </section>
 <section id="the-problem" class="slide level2" data-background-color="#065A82">
 <h2>The Problem</h2>
@@ -229,11 +229,12 @@ Ed Southwood
 </div>
 </div><div class="column" style="width:42%;">
 <h3 id="the-scale-of-the-challenge">The scale of the challenge</h3>
-<pre><code>HELM: Helping Engineers Learn Mathematics
-──────────────────────────────────────────
-50 workbooks
-500+ HTML pages
-924 diagrams &amp; graphs</code></pre>
+<p><strong>HELM: Helping Engineers Learn Mathematics</strong></p>
+<ul>
+<li>50 workbooks</li>
+<li>500+ HTML pages</li>
+<li>924 diagrams &amp; graphs</li>
+</ul>
 <div class="fragment">
 <p><strong>Zero long descriptions</strong> in the original resource.</p>
 <p>Each image needs <strong>alt text</strong> <em>and</em> a <strong>long description</strong> — and manual authoring at this scale is simply not feasible.</p>
@@ -262,8 +263,8 @@ Ed Southwood
 <section id="why-run-ai-locally" class="slide level2">
 <h2>Why Run AI Locally?</h2>
 <div class="columns">
-<div class="column" style="width:45%;">
-<h3 id="the-university-ai-tools-werent-an-option">The university AI tools weren’t an option</h3>
+<div class="column" style="width:40%;">
+<h3 id="difficult-with-university-it-policies-and-unpredictable-costs">Difficult with University IT policies and unpredictable costs</h3>
 <ul>
 <li>IT policy gives <strong>no command-line or API access</strong> to university AI services</li>
 <li>Commercial APIs (OpenAI, Gemini) are available — but the cost was difficult to predict</li>
@@ -281,7 +282,7 @@ Ed Southwood
 </div>
 </div>
 </div>
-</div><div class="column" style="width:55%;">
+</div><div class="column" style="width:60%;">
 <h3 id="the-local-solution">The local solution</h3>
 <ul>
 <li><strong>Ollama</strong> — run open-source LLMs locally, no API key needed</li>
@@ -289,8 +290,8 @@ Ed Southwood
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="graphics_card.jpg" style="width:75.0%" alt="A consumer graphics card (GPU) sitting on a desk, used to run the gemma4 language model locally via Ollama"></p>
-<figcaption>My graphics card running gemma4 locally</figcaption>
+<p><img data-src="graphics_card.jpg" style="width:50.0%" alt="A consumer graphics card (GPU) sitting on a desk, used to run the gemma4 language model locally via Ollama"></p>
+<figcaption>Who said gamming was no good for nothing?</figcaption>
 </figure>
 </div>
 </div></div>
@@ -333,34 +334,34 @@ Ed Southwood
 </section>
 <section id="the-script-prompting-the-model" class="slide level2">
 <h2>The Script: Prompting the Model</h2>
-<p>Getting reliable, structured output from an LLM requires careful use of <strong>system prompts, user prompts, and JSON mode</strong> together:</p>
+<p><strong>Problem</strong>: Getting reliable, structured output from an LLM <strong>Solution</strong>: Use <strong>system prompts, user prompts, and JSON mode</strong></p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><strong>System prompt</strong> sets the persona and hard rules — things the model must always do, regardless of the image:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href=""></a>{<span class="st">"role"</span>: <span class="st">"system"</span>, <span class="st">"content"</span>: <span class="st">"""</span></span>
-<span id="cb2-2"><a href=""></a><span class="st">You are an assistant producing structured</span></span>
-<span id="cb2-3"><a href=""></a><span class="st">accessibility descriptions.</span></span>
-<span id="cb2-4"><a href=""></a></span>
-<span id="cb2-5"><a href=""></a><span class="st">- Output must be valid JSON</span></span>
-<span id="cb2-6"><a href=""></a><span class="st">- Always use LaTeX: </span><span class="ch">\\</span><span class="st">( and </span><span class="ch">\\</span><span class="st">)</span></span>
-<span id="cb2-7"><a href=""></a><span class="st">- long_description must be a bulleted list</span></span>
-<span id="cb2-8"><a href=""></a><span class="st">- Describe only what is visible</span></span>
-<span id="cb2-9"><a href=""></a><span class="st">- Spell out all abbreviated units</span></span>
-<span id="cb2-10"><a href=""></a><span class="st">"""</span>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href=""></a>{<span class="st">"role"</span>: <span class="st">"system"</span>, <span class="st">"content"</span>: <span class="st">"""</span></span>
+<span id="cb1-2"><a href=""></a><span class="st">You are an assistant producing structured</span></span>
+<span id="cb1-3"><a href=""></a><span class="st">accessibility descriptions.</span></span>
+<span id="cb1-4"><a href=""></a></span>
+<span id="cb1-5"><a href=""></a><span class="st">- Output must be valid JSON</span></span>
+<span id="cb1-6"><a href=""></a><span class="st">- Always use LaTeX: </span><span class="ch">\\</span><span class="st">( and </span><span class="ch">\\</span><span class="st">)</span></span>
+<span id="cb1-7"><a href=""></a><span class="st">- long_description must be a bulleted list</span></span>
+<span id="cb1-8"><a href=""></a><span class="st">- Describe only what is visible</span></span>
+<span id="cb1-9"><a href=""></a><span class="st">- Spell out all abbreviated units</span></span>
+<span id="cb1-10"><a href=""></a><span class="st">"""</span>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div><div class="column" style="width:50%;">
-<p><strong>User prompt</strong> passes the image and its HTML context — so the model knows whether a graph is illustrating integration or signal processing:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href=""></a>{<span class="st">"role"</span>: <span class="st">"user"</span>,</span>
-<span id="cb3-2"><a href=""></a> <span class="st">"content"</span>: <span class="ss">f"Describe the image.</span><span class="ch">\n</span><span class="ss">Context: </span><span class="sc">{</span>context<span class="sc">}</span><span class="ss">"</span>,</span>
-<span id="cb3-3"><a href=""></a> <span class="st">"images"</span>: [png_path]}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>User prompt</strong> passes the image and its HTML context. <code>context</code> and <code>png_path</code> are variables containing the image’s HTML and the path to the converted PNG:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href=""></a>{<span class="st">"role"</span>: <span class="st">"user"</span>,</span>
+<span id="cb2-2"><a href=""></a> <span class="st">"content"</span>: <span class="ss">f"Describe the image.</span><span class="ch">\n</span><span class="ss">Context: </span><span class="sc">{</span>context<span class="sc">}</span><span class="ss">"</span>,</span>
+<span id="cb2-3"><a href=""></a> <span class="st">"images"</span>: [png_path]}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>JSON mode</strong> enforces the output structure — no freeform text, no markdown fences, no refusals:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href=""></a><span class="bu">format</span><span class="op">=</span>{</span>
-<span id="cb4-2"><a href=""></a>  <span class="st">"type"</span>: <span class="st">"object"</span>,</span>
-<span id="cb4-3"><a href=""></a>  <span class="st">"properties"</span>: {</span>
-<span id="cb4-4"><a href=""></a>    <span class="st">"alt"</span>:              {<span class="st">"type"</span>: <span class="st">"string"</span>},</span>
-<span id="cb4-5"><a href=""></a>    <span class="st">"long_description"</span>: {<span class="st">"type"</span>: <span class="st">"string"</span>}</span>
-<span id="cb4-6"><a href=""></a>  },</span>
-<span id="cb4-7"><a href=""></a>  <span class="st">"required"</span>: [<span class="st">"alt"</span>, <span class="st">"long_description"</span>]</span>
-<span id="cb4-8"><a href=""></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href=""></a><span class="bu">format</span><span class="op">=</span>{</span>
+<span id="cb3-2"><a href=""></a>  <span class="st">"type"</span>: <span class="st">"object"</span>,</span>
+<span id="cb3-3"><a href=""></a>  <span class="st">"properties"</span>: {</span>
+<span id="cb3-4"><a href=""></a>    <span class="st">"alt"</span>:              {<span class="st">"type"</span>: <span class="st">"string"</span>},</span>
+<span id="cb3-5"><a href=""></a>    <span class="st">"long_description"</span>: {<span class="st">"type"</span>: <span class="st">"string"</span>}</span>
+<span id="cb3-6"><a href=""></a>  },</span>
+<span id="cb3-7"><a href=""></a>  <span class="st">"required"</span>: [<span class="st">"alt"</span>, <span class="st">"long_description"</span>]</span>
+<span id="cb3-8"><a href=""></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div></div>
 </section>
 <section id="the-script-svg-png-html" class="slide level2" data-background-color="#ffffff">
@@ -369,12 +370,12 @@ Ed Southwood
 <div class="column" style="width:50%;">
 <p><strong>1. Convert SVG to PNG</strong></p>
 <p>HELM images are <strong>SVG</strong> — great for accessible interaction, but multimodal LLMs require raster input. The script auto-converts using Inkscape (falling back to ImageMagick):</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href=""></a><span class="kw">def</span> convert_svg_to_png(svg_path, output_png):</span>
-<span id="cb5-2"><a href=""></a>    subprocess.run(</span>
-<span id="cb5-3"><a href=""></a>      <span class="ss">f"inkscape --export-type=png "</span></span>
-<span id="cb5-4"><a href=""></a>      <span class="ss">f"--export-filename=</span><span class="sc">{</span>output_png<span class="sc">}</span><span class="ss"> "</span></span>
-<span id="cb5-5"><a href=""></a>      <span class="ss">f"</span><span class="sc">{</span>svg_path<span class="sc">}</span><span class="ss">"</span>, shell<span class="op">=</span><span class="va">True</span></span>
-<span id="cb5-6"><a href=""></a>    )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href=""></a><span class="kw">def</span> convert_svg_to_png(svg_path, output_png):</span>
+<span id="cb4-2"><a href=""></a>    subprocess.run(</span>
+<span id="cb4-3"><a href=""></a>      <span class="ss">f"inkscape --export-type=png "</span></span>
+<span id="cb4-4"><a href=""></a>      <span class="ss">f"--export-filename=</span><span class="sc">{</span>output_png<span class="sc">}</span><span class="ss"> "</span></span>
+<span id="cb4-5"><a href=""></a>      <span class="ss">f"</span><span class="sc">{</span>svg_path<span class="sc">}</span><span class="ss">"</span>, shell<span class="op">=</span><span class="va">True</span></span>
+<span id="cb4-6"><a href=""></a>    )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>The original SVG stays in the HTML — only PNG goes to the model.</p>
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
@@ -393,16 +394,16 @@ Ed Southwood
 </div><div class="column" style="width:50%;">
 <p><strong>2. Write descriptions back into HTML</strong></p>
 <p>Alt text is written directly onto the <code>&lt;img&gt;</code> tag. A separate long-description page is created and linked:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href=""></a>img[<span class="st">'alt'</span>] <span class="op">=</span> result[<span class="st">'alt'</span>]</span>
-<span id="cb6-2"><a href=""></a></span>
-<span id="cb6-3"><a href=""></a>page_path <span class="op">=</span> make_longdesc_page(</span>
-<span id="cb6-4"><a href=""></a>    html_file, img_basename,</span>
-<span id="cb6-5"><a href=""></a>    long_description, png_path, alt</span>
-<span id="cb6-6"><a href=""></a>)</span>
-<span id="cb6-7"><a href=""></a><span class="co"># Insert link after the image</span></span>
-<span id="cb6-8"><a href=""></a>a <span class="op">=</span> soup.new_tag(<span class="st">'a'</span>, href<span class="op">=</span>href)</span>
-<span id="cb6-9"><a href=""></a>a.string <span class="op">=</span> <span class="st">'Long description'</span></span>
-<span id="cb6-10"><a href=""></a>img.parent.insert_after(a)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href=""></a>img[<span class="st">'alt'</span>] <span class="op">=</span> result[<span class="st">'alt'</span>]</span>
+<span id="cb5-2"><a href=""></a></span>
+<span id="cb5-3"><a href=""></a>page_path <span class="op">=</span> make_longdesc_page(</span>
+<span id="cb5-4"><a href=""></a>    html_file, img_basename,</span>
+<span id="cb5-5"><a href=""></a>    long_description, png_path, alt</span>
+<span id="cb5-6"><a href=""></a>)</span>
+<span id="cb5-7"><a href=""></a><span class="co"># Insert link after the image</span></span>
+<span id="cb5-8"><a href=""></a>a <span class="op">=</span> soup.new_tag(<span class="st">'a'</span>, href<span class="op">=</span>href)</span>
+<span id="cb5-9"><a href=""></a>a.string <span class="op">=</span> <span class="st">'Long description'</span></span>
+<span id="cb5-10"><a href=""></a>img.parent.insert_after(a)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div></div>
 </section>
 <section id="the-script-fixing-the-output" class="slide level2" data-background-color="#ffffff">
@@ -412,20 +413,25 @@ Ed Southwood
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><strong>LaTeX escape repair</strong> — <code>json.loads()</code> silently converts <code>\t</code>, <code>\f</code>, <code>\r</code> to control characters, mangling common LaTeX commands:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href=""></a>repairs <span class="op">=</span> [</span>
-<span id="cb7-2"><a href=""></a>    (<span class="st">'</span><span class="ch">\f</span><span class="st">rac'</span>,  <span class="vs">r'</span><span class="ch">\f</span><span class="vs">rac'</span>),</span>
-<span id="cb7-3"><a href=""></a>    (<span class="st">'</span><span class="ch">\t</span><span class="st">heta'</span>, <span class="vs">r'</span><span class="ch">\t</span><span class="vs">heta'</span>),</span>
-<span id="cb7-4"><a href=""></a>    (<span class="st">'</span><span class="ch">\t</span><span class="st">ext'</span>,  <span class="vs">r'</span><span class="ch">\t</span><span class="vs">ext'</span>),</span>
-<span id="cb7-5"><a href=""></a>    (<span class="st">'</span><span class="ch">\t</span><span class="st">imes'</span>, <span class="vs">r'</span><span class="ch">\t</span><span class="vs">imes'</span>), ...</span>
-<span id="cb7-6"><a href=""></a>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href=""></a>repairs <span class="op">=</span> [</span>
+<span id="cb6-2"><a href=""></a>    (<span class="st">'</span><span class="ch">\f</span><span class="st">rac'</span>,  <span class="vs">r'</span><span class="ch">\f</span><span class="vs">rac'</span>),</span>
+<span id="cb6-3"><a href=""></a>    (<span class="st">'</span><span class="ch">\t</span><span class="st">heta'</span>, <span class="vs">r'</span><span class="ch">\t</span><span class="vs">heta'</span>),</span>
+<span id="cb6-4"><a href=""></a>    (<span class="st">'</span><span class="ch">\t</span><span class="st">ext'</span>,  <span class="vs">r'</span><span class="ch">\t</span><span class="vs">ext'</span>),</span>
+<span id="cb6-5"><a href=""></a>    (<span class="st">'</span><span class="ch">\t</span><span class="st">imes'</span>, <span class="vs">r'</span><span class="ch">\t</span><span class="vs">imes'</span>), ...</span>
+<span id="cb6-6"><a href=""></a>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li><code>\t</code> - tab</li>
+<li><code>\f</code> - form feed</li>
+<li><code>\r</code> - carriage return</li>
+</ul>
 </div><div class="column" style="width:50%;">
 <p><strong>Bullet-point → HTML conversion</strong> — the model returns <code>*</code>-delimited bullets; the script converts them to a proper <code>&lt;ul&gt;</code> list:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href=""></a><span class="kw">def</span> bullets_to_html(text):</span>
-<span id="cb8-2"><a href=""></a>    items <span class="op">=</span> re.split(<span class="vs">r'</span><span class="dv">\s</span><span class="op">*</span><span class="ch">\*</span><span class="dv">\s</span><span class="op">*</span><span class="vs">'</span>, text)</span>
-<span id="cb8-3"><a href=""></a>    <span class="cf">return</span> <span class="st">'&lt;ul&gt;</span><span class="ch">\n</span><span class="st">'</span> <span class="op">+</span> <span class="st">''</span>.join(</span>
-<span id="cb8-4"><a href=""></a>        <span class="ss">f'  &lt;li&gt;</span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">&lt;/li&gt;</span><span class="ch">\n</span><span class="ss">'</span></span>
-<span id="cb8-5"><a href=""></a>        <span class="cf">for</span> i <span class="kw">in</span> items <span class="cf">if</span> i.strip()</span>
-<span id="cb8-6"><a href=""></a>    ) <span class="op">+</span> <span class="st">'&lt;/ul&gt;'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href=""></a><span class="kw">def</span> bullets_to_html(text):</span>
+<span id="cb7-2"><a href=""></a>    items <span class="op">=</span> re.split(<span class="vs">r'</span><span class="dv">\s</span><span class="op">*</span><span class="ch">\*</span><span class="dv">\s</span><span class="op">*</span><span class="vs">'</span>, text)</span>
+<span id="cb7-3"><a href=""></a>    <span class="cf">return</span> <span class="st">'&lt;ul&gt;</span><span class="ch">\n</span><span class="st">'</span> <span class="op">+</span> <span class="st">''</span>.join(</span>
+<span id="cb7-4"><a href=""></a>        <span class="ss">f'  &lt;li&gt;</span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">&lt;/li&gt;</span><span class="ch">\n</span><span class="ss">'</span></span>
+<span id="cb7-5"><a href=""></a>        <span class="cf">for</span> i <span class="kw">in</span> items <span class="cf">if</span> i.strip()</span>
+<span id="cb7-6"><a href=""></a>    ) <span class="op">+</span> <span class="st">'&lt;/ul&gt;'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div></div>
 </section>
 <section id="example-output" class="slide level2" data-background-color="#ffffff">
@@ -470,7 +476,7 @@ Ed Southwood
 </blockquote>
 <p><strong>Anyone can feed back via a Microsoft Form linked on every page:</strong></p>
 <ol type="1">
-<li>View the image alongside its generated description</li>
+<li>👀 View the image alongside its generated description</li>
 <li>✅ <strong>Confirm</strong> it is accurate</li>
 <li>✏️ <strong>Suggest an alternative</strong> if the description is wrong or incomplete</li>
 </ol>
@@ -562,6 +568,22 @@ Ed Southwood
 </tr>
 </tbody>
 </table>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>How to contribute</strong></p>
+</div>
+<div class="callout-content">
+<p>Browse the resource:<br>
+<strong><a href="https://bathmash.github.io/HELM/">bathmash.github.io/HELM</a></strong></p>
+<p>Or contact Ed directly:<br>
+<strong><a href="mailto:edrs20@bath.ac.uk">edrs20@bath.ac.uk</a></strong></p>
+</div>
+</div>
+</div>
 </div><div class="column" style="width:45%;">
 <h3 id="everything-is-free">Everything is free</h3>
 <p>🆓 Ollama · gemma4 · Python · HELM</p>
@@ -582,19 +604,19 @@ Ed Southwood
 </div></div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="helm_alt_text_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="index_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="helm_alt_text_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="helm_alt_text_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="helm_alt_text_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="helm_alt_text_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="helm_alt_text_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="index_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="helm_alt_text_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="helm_alt_text_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="helm_alt_text_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="helm_alt_text_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="index_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="index_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="index_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="index_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
