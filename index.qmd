@@ -12,7 +12,7 @@ format:
     transition: slide
     background-transition: fade
     logo: ""
-    footer: "Maths Support Conference · edrs20@bath.ac.uk"
+    footer: "CETL-MSOR 2026 · edrs20@bath.ac.uk"
     highlight-style: github
     code-block-bg: true
     code-block-border-left: "#028090"
