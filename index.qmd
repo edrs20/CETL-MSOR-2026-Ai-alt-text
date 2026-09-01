@@ -97,6 +97,26 @@ Each image needs **alt text** *and* a **long description** — and manual author
 
 ---
 
+## Is HELM still relevant?
+
+:::{.columns}
+
+:::: {.column width="40%"}
+![views](views.png){fig-alt="HELM views last 30 days" }
+![locations](locations.png){fig-alt="HELM locations last 30 days" }
+::::
+
+:::: {.column width="60%"}
+![](topics.png){fig-alt="HELM topcs last 30 days" width="50%"}
+::::
+:::
+
+## Get AI to do it?
+
+![](Elephant's_tea_party%2C_Robur_Tea_Room%2C_Sydney%2C_24_March_1939_-_Sam_Hood_(3529604677).jpg){fig-alt="A black-and-white photograph of a group of elephants sitting at a table in a tea room, enjoying tea and cakes. The elephants are anthropomorphized, wearing hats and coats, and appear to be engaged in conversation. The setting is indoors, with tables, chairs, and other patrons visible in the background." width="50%"}
+
+[Auto-generate alt text with Image Analysis AI](https://www.microsoft.com/en-us/ai/ai-lab-image-captioning) microsoft is already doing this - is all this pointless?
+
 ## Why Run AI Locally? 
 
 :::::: {.columns}
@@ -335,7 +355,7 @@ def bullets_to_html(text):
 
 ### Input image
 
-![](temp3.png){fig-alt="A graph showing a curve and a secant line segment forming a right triangle, illustrating a concept related to derivatives." width="100%"}
+![](temp3.svg){fig-alt="A graph showing a curve and a secant line segment forming a right triangle, illustrating a concept related to derivatives." width="100%"}
 
 **Alt text generated:**
 
