@@ -295,6 +295,12 @@ img.parent.insert_after(a)
 
 ::::
 
+::: {.callout-tip}
+## To late but an Idea!
+
+What could a more complex model learn from the SVG structure? Could it generate a more accurate description if it could read the SVG DOM?
+:::
+
 ::::::
 
 ---
