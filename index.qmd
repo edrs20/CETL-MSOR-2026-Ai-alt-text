@@ -27,11 +27,11 @@ format:
 
 ## Background {auto-animate=true}
 
-📚️ Converting a large library of existing resources.
+📚️ Converting HELM (Help Engineers Learn Mathematics) a large library of existing resources.
 
 ## Background {auto-animate=true}
 
-📚️ Converting a large library of existing resources.
+📚️ Converting HELM (Help Engineers Learn Mathematics) a large library of existing resources.
 
 ![](alt-text-meme.jpg){.incremental fig-alt="Clairvoyant meme showing lots of alt text"}
 
@@ -40,7 +40,7 @@ format:
 :::: {.columns}
 
 ::: {.column width="50%"}
-📚️ Converting a large library of existing resources.
+📚️ Converting HELM (Help Engineers Learn Mathematics) a large library of existing resources.
 
 ![](alt-text-meme.jpg){.incremental fig-alt="Clairvoyant meme showing lots of alt text"}
 
@@ -59,7 +59,7 @@ format:
 :::: {.columns}
 
 ::: {.column width="50%"}
-📚️ Converting a large library of existing resources.
+📚️ Converting HELM (Help Engineers Learn Mathematics) a large library of existing resources.
 
 ![](alt-text-meme.jpg){.incremental fig-alt="Clairvoyant meme showing lots of alt text"}
 
@@ -80,7 +80,7 @@ format:
 :::: {.columns}
 
 ::: {.column width="50%"}
-📚️ Converting a large library of existing resources.
+📚️ Converting HELM (Help Engineers Learn Mathematics) a large library of existing resources.
 
 ![](alt-text-meme.jpg){.incremental fig-alt="Clairvoyant meme showing lots of alt text"}
 
@@ -102,7 +102,7 @@ format:
 :::: {.columns}
 
 ::: {.column width="50%"}
-📚️ Converting a large library of existing resources.
+📚️ Converting HELM (Help Engineers Learn Mathematics) a large library of existing resources.
 
 ![](alt-text-meme.jpg){.incremental fig-alt="Clairvoyant meme showing lots of alt text"}
 
@@ -149,13 +149,11 @@ format:
 
 ## The Problem {background-color="#065A82"}
 
+
+
 ::: {.quiz-question}
 ❓ **Why do we want accessible resources?** 
 :::
-
-:::::: {.columns}
-
-:::: {.column width="58%"}
 
 ::: {.incremental .emoji-list}
 - ⚖️ It's the law!
@@ -168,10 +166,6 @@ format:
 > "Almost all internal and external content and systems accessed through a browser fall within scope."
 > — [Jisc](https://www.jisc.ac.uk/guides/practical-steps-to-meeting-accessibility-regulations)
 :::
-
-::::
-
-::::::
 
 ---
 
@@ -203,7 +197,14 @@ format:
 ::::::
 
 ::: {.fragment}
-🔗 [bathmash.github.io/HELM](https://bathmash.github.io/HELM/)
+🔗 [HELM Html version](https://bathmash.github.io/HELM/)
+    *MASH Team - University of Bath*
+
+🔗 [Translating the HELM workbooks to STACK](https://stack-assessment.org/CaseStudies/2021/HELM/)
+    *Konstantina Zerva - The University of Edinburgh*
+
+🔗 [FYI maths NSW](https://fyimathsnsw.github.io/HELM/helmindex.html)
+    *Don Sherman - University of New South Wales*
 :::
 
 ---
@@ -225,11 +226,11 @@ format:
 ## Guess HELM's Most-Viewed Topics
 
 ::: {.quiz-question}
-❓ **Which HELM topics do students look at most?** *(shout out your guesses — a match wins a raffle ticket!)*
+❓ **Which HELM topics do students look at most?**
 :::
 
 ::: {.incremental .emoji-list}
-- 🥇 [⭐ Bonus point]{.bonus} **Mathematical Notation & Symbols** — 300 views, the clear #1
+- 🥇 [⭐ Bonus point]{.bonus} **Mathematical Notation & Symbols** — 300 views,
 - 🌊 Fourier Series — Complex Form (200 views)
 - 🔢 Repeated Eigenvalues of Symmetric Matrices (200 views)
 - ➗ Simplification & Factorisation (200 views) — appeared twice in the raw data, most consistently searched
@@ -251,14 +252,14 @@ format:
 :::: {.columns}
 
 ::: {.column width="50%"}
-![](Elephant's_tea_party%2C_Robur_Tea_Room%2C_Sydney%2C_24_March_1939_-_Sam_Hood_(3529604677).jpg){fig-alt="A black-and-white photograph of a group of elephants sitting at a table in a tea room, enjoying tea and cakes. The elephants are anthropomorphized, wearing hats and coats, and appear to be engaged in conversation. The setting is indoors, with tables, chairs, and other patrons visible in the background." width="50%"}
+![](Elephant's_tea_party%2C_Robur_Tea_Room%2C_Sydney%2C_24_March_1939_-_Sam_Hood_(3529604677).jpg){fig-alt="A black-and-white photograph of a group of elephants sitting at a table in a tea room, enjoying tea and cakes. The elephants are anthropomorphized, wearing hats and coats, and appear to be engaged in conversation. The setting is indoors, with tables, chairs, and other patrons visible in the background."}
 
 :::
 
 ::: {.column width="50%"}
 
 
-[Auto-generate alt text with Image Analysis AI](https://www.microsoft.com/en-us/ai/ai-lab-image-captioning) microsoft is already doing this - is all this pointless?
+⚙️ [Auto-generate alt text with Image Analysis AI](https://www.microsoft.com/en-us/ai/ai-lab-image-captioning) microsoft is already doing this - is all this pointless?
 
 :::
 
@@ -269,16 +270,37 @@ format:
 :::: {.columns}
 
 ::: {.column width="50%"}
-![](Elephant's_tea_party%2C_Robur_Tea_Room%2C_Sydney%2C_24_March_1939_-_Sam_Hood_(3529604677).jpg){fig-alt="A black-and-white photograph of a group of elephants sitting at a table in a tea room, enjoying tea and cakes. The elephants are anthropomorphized, wearing hats and coats, and appear to be engaged in conversation. The setting is indoors, with tables, chairs, and other patrons visible in the background." width="50%"}
+![](Elephant's_tea_party%2C_Robur_Tea_Room%2C_Sydney%2C_24_March_1939_-_Sam_Hood_(3529604677).jpg){fig-alt="A black-and-white photograph of a group of elephants sitting at a table in a tea room, enjoying tea and cakes. The elephants are anthropomorphized, wearing hats and coats, and appear to be engaged in conversation. The setting is indoors, with tables, chairs, and other patrons visible in the background."}
 
 :::
 
 ::: {.column width="50%"}
 
 
-[Auto-generate alt text with Image Analysis AI](https://www.microsoft.com/en-us/ai/ai-lab-image-captioning) microsoft is already doing this - is all this pointless?
+⚙️ [Auto-generate alt text with Image Analysis AI](https://www.microsoft.com/en-us/ai/ai-lab-image-captioning) microsoft is already doing this - is all this pointless?
 
-But we have to do it anyway.
+🗣️ But we have to do it anyway.
+
+:::
+
+::::
+
+## Get AI to do it? {auto-animate=true}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](Elephant's_tea_party%2C_Robur_Tea_Room%2C_Sydney%2C_24_March_1939_-_Sam_Hood_(3529604677).jpg){fig-alt="A black-and-white photograph of a group of elephants sitting at a table in a tea room, enjoying tea and cakes. The elephants are anthropomorphized, wearing hats and coats, and appear to be engaged in conversation. The setting is indoors, with tables, chairs, and other patrons visible in the background."}
+
+:::
+
+::: {.column width="50%"}
+
+⚙️ [Auto-generate alt text with Image Analysis AI](https://www.microsoft.com/en-us/ai/ai-lab-image-captioning) microsoft is already doing this - is all this pointless?
+
+🗣️ But we have to do it anyway.
+
+⚽ Level the playing field - unequal access to ai tools.
 
 :::
 
@@ -333,7 +355,7 @@ The LLM prompt was structured around guidelines from the **DIAGRAM Centre's POET
 
 ::: {.emoji-list}
 - 🔍 **Context first** — what type of image is this?
-- 👥 **Audience awareness** — engineering students need precision
+- 👥 **Audience awareness** — undergraduate students
 - 📑 **Two-tier output** — short alt text *and* long description
 - 📐 **Maths-specific conventions** — axes, units, trends, data tables
 - 🔣 **LaTeX throughout** — all maths in `\( \)` notation
@@ -676,7 +698,7 @@ Or contact Ed directly:
 Browse the resource:  
 **[bathmash.github.io/HELM](https://bathmash.github.io/HELM/)**
 
-Or contact Ed directly:  
+Or contact me directly:  
 **[edrs20@bath.ac.uk](mailto:edrs20@bath.ac.uk)**
 :::
 
