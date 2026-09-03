@@ -167,3 +167,19 @@ $link-color: $primary;   // #065A82 on white = 7.52:1 ✅
 .reveal pre {
   border-left: 3px solid #028090;
 }
+
+// ── Emoji "bullet" lists ──────────────────────────────────────────────────
+// Each item starts with a topic emoji instead of a disc marker (see .qmd).
+// Combines with .incremental so every emoji line still reveals one at a time,
+// matching the build-up style of the opening "Background" slides.
+.reveal .emoji-list ul,
+.reveal ul.emoji-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+.reveal .emoji-list li {
+  margin-bottom: 0.45em;
+  padding-left: 1.7em;
+  text-indent: -1.7em;   // hanging indent keeps wrapped lines clear of the emoji
+}

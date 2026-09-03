@@ -157,37 +157,16 @@ format:
 
 :::: {.column width="58%"}
 
-::: {.incremental}
-- It's the law!
-- It's right thing to do.
-- [⭐ Bonus point]{.bonus} **Public Sector Bodies Accessibility Regulations 2018** require all HE website content to meet **WCAG 2.1 AA**
-- Reinforced by the **Equality Act 2010**, which requires reasonable adjustments to digital content
-- Most HE providers are in scope due to dependence on public funding
-- This includes learning materials — not just institutional websites
+::: {.incremental .emoji-list}
+- ⚖️ It's the law!
+- ❤️ It's the right thing to do.
+- 📜 [⭐ Bonus point]{.bonus} **Public Sector Bodies Accessibility Regulations 2018** require all HE website content to meet **WCAG 2.1 AA**
+- 🏛️ [⭐ Bonus point]{.bonus} Reinforced by the **Equality Act 2010**, which requires reasonable adjustments to digital content
 :::
 
 ::: {.fragment}
 > "Almost all internal and external content and systems accessed through a browser fall within scope."
 > — [Jisc](https://www.jisc.ac.uk/guides/practical-steps-to-meeting-accessibility-regulations)
-:::
-
-::::
-
-:::: {.column width="42%"}
-
-### The scale of the challenge
-
-**HELM: Helping Engineers Learn Mathematics**
-
-- 50 workbooks
-- 500+ HTML pages
-- 924 diagrams & graphs
-
-
-::: {.fragment}
-**Zero long descriptions** in the original resource.
-
-Each image needs **alt text** *and* a **long description** — and manual authoring at this scale is simply not feasible.
 :::
 
 ::::
@@ -204,10 +183,12 @@ Each image needs **alt text** *and* a **long description** — and manual author
 
 **Helping Engineers Learn Mathematics**
 
-- Originally created by [the HELM consortium](https://www.lboro.ac.uk/departments/mlsc/student-resources/helm-workbooks/)
-- Converted to accessible HTML by [MASH at the University of Bath](https://www.bath.ac.uk/professional-services/mathematics-resources-centre-mash/), supported by the [sigma Network](http://www.sigma-network.ac.uk/)
-- Released under a Creative Commons (BY-NC) licence
-- Covers everything from Basic Algebra to Advanced Statistics
+::: {.emoji-list}
+- 🎓 Originally created by [the HELM consortium](https://www.lboro.ac.uk/departments/mlsc/student-resources/helm-workbooks/)
+- ♿ Converted to accessible HTML by [MASH at the University of Bath](https://www.bath.ac.uk/professional-services/mathematics-resources-centre-mash/), supported by the [sigma Network](http://www.sigma-network.ac.uk/)
+- ©️ Released under a Creative Commons (BY-NC) licence
+- 📐 Covers everything from Basic Algebra to Advanced Statistics
+:::
 
 ::::
 
@@ -247,25 +228,61 @@ Each image needs **alt text** *and* a **long description** — and manual author
 ❓ **Which HELM topics do students look at most?** *(shout out your guesses — a match wins a raffle ticket!)*
 :::
 
-::: {.incremental}
-- [⭐ Bonus point]{.bonus} **Mathematical Notation & Symbols** — 300 views, the clear #1
-- Fourier Series — Complex Form (200 views)
-- Repeated Eigenvalues of Symmetric Matrices (200 views)
-- Simplification & Factorisation (200 views) — appeared twice in the raw data, most consistently searched
-- Experimental Design (200 views)
-- Indices (200 views)
-- Parabolic PDEs (200 views)
+::: {.incremental .emoji-list}
+- 🥇 [⭐ Bonus point]{.bonus} **Mathematical Notation & Symbols** — 300 views, the clear #1
+- 🌊 Fourier Series — Complex Form (200 views)
+- 🔢 Repeated Eigenvalues of Symmetric Matrices (200 views)
+- ➗ Simplification & Factorisation (200 views) — appeared twice in the raw data, most consistently searched
+- 🧪 Experimental Design (200 views)
+- 🔟 Indices (200 views)
+- 〰️ Parabolic PDEs (200 views)
 :::
 
 ::: {.fragment}
 ![](topics.png){fig-alt="Screenshot of HELM's most-viewed topics over the last 30 days, ranked by page views" width="55%"}
 :::
 
-## Get AI to do it?
+## Get AI to do it? {auto-animate=true}
 
 ![](Elephant's_tea_party%2C_Robur_Tea_Room%2C_Sydney%2C_24_March_1939_-_Sam_Hood_(3529604677).jpg){fig-alt="A black-and-white photograph of a group of elephants sitting at a table in a tea room, enjoying tea and cakes. The elephants are anthropomorphized, wearing hats and coats, and appear to be engaged in conversation. The setting is indoors, with tables, chairs, and other patrons visible in the background." width="50%"}
 
+## Get AI to do it? {auto-animate=true}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](Elephant's_tea_party%2C_Robur_Tea_Room%2C_Sydney%2C_24_March_1939_-_Sam_Hood_(3529604677).jpg){fig-alt="A black-and-white photograph of a group of elephants sitting at a table in a tea room, enjoying tea and cakes. The elephants are anthropomorphized, wearing hats and coats, and appear to be engaged in conversation. The setting is indoors, with tables, chairs, and other patrons visible in the background." width="50%"}
+
+:::
+
+::: {.column width="50%"}
+
+
 [Auto-generate alt text with Image Analysis AI](https://www.microsoft.com/en-us/ai/ai-lab-image-captioning) microsoft is already doing this - is all this pointless?
+
+:::
+
+::::
+
+## Get AI to do it? {auto-animate=true}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](Elephant's_tea_party%2C_Robur_Tea_Room%2C_Sydney%2C_24_March_1939_-_Sam_Hood_(3529604677).jpg){fig-alt="A black-and-white photograph of a group of elephants sitting at a table in a tea room, enjoying tea and cakes. The elephants are anthropomorphized, wearing hats and coats, and appear to be engaged in conversation. The setting is indoors, with tables, chairs, and other patrons visible in the background." width="50%"}
+
+:::
+
+::: {.column width="50%"}
+
+
+[Auto-generate alt text with Image Analysis AI](https://www.microsoft.com/en-us/ai/ai-lab-image-captioning) microsoft is already doing this - is all this pointless?
+
+But we have to do it anyway.
+
+:::
+
+::::
 
 ## Why Run AI Locally? 
 
@@ -275,8 +292,10 @@ Each image needs **alt text** *and* a **long description** — and manual author
 
 ### Difficult with University IT policies and unpredictable costs
 
-- IT policy gives **no command-line or API access** to university AI services
-- Commercial APIs (OpenAI, Gemini) are available — but the cost was difficult to predict
+::: {.emoji-list}
+- 🚫 IT policy gives **no command-line or API access** to university AI services
+- 💸 Commercial APIs (OpenAI, Gemini) are available — but the cost was difficult to predict
+:::
 
 ::: {.callout-warning}
 ### How many tokens is a maths diagram?
@@ -289,8 +308,10 @@ To be honest - I have no idea!
 
 ### The local solution
 
-- **Ollama** — run open-source LLMs locally, no API key needed
-- **gemma4** — Google's multimodal model, understands mathematical diagrams
+::: {.emoji-list}
+- 🖥️ **Ollama** — run open-source LLMs locally, no API key needed
+- 🤖 **gemma4** — Google's multimodal model, understands mathematical diagrams
+:::
 
 ![Who said gamming was no good for nothing?](graphics_card.jpg){fig-alt="A consumer graphics card (GPU) sitting on a desk, used to run the gemma4 language model locally via Ollama" width="50%"}
 
@@ -310,11 +331,13 @@ The LLM prompt was structured around guidelines from the **DIAGRAM Centre's POET
 
 ### Key principles used:
 
-- **Context first** — what type of image is this?
-- **Audience awareness** — engineering students need precision
-- **Two-tier output** — short alt text *and* long description
-- **Maths-specific conventions** — axes, units, trends, data tables
-- **LaTeX throughout** — all maths in `\( \)` notation
+::: {.emoji-list}
+- 🔍 **Context first** — what type of image is this?
+- 👥 **Audience awareness** — engineering students need precision
+- 📑 **Two-tier output** — short alt text *and* long description
+- 📐 **Maths-specific conventions** — axes, units, trends, data tables
+- 🔣 **LaTeX throughout** — all maths in `\( \)` notation
+:::
 
 ::::
 
@@ -323,11 +346,13 @@ The LLM prompt was structured around guidelines from the **DIAGRAM Centre's POET
 ::: {.callout-tip}
 ## POET guidelines cover:
 
-- Graphs & charts
-- Geometric figures
-- Flow charts
-- Complex diagrams
-- Mathematical notation
+::: {.emoji-list}
+- 📊 Graphs & charts
+- 🔺 Geometric figures
+- 🔀 Flow charts
+- 🗺️ Complex diagrams
+- ✏️ Mathematical notation
+:::
 :::
 
 🔗 [poet.bornaccessible.org](https://poet.bornaccessible.org/how.html#mathematics)
@@ -593,15 +618,19 @@ Each long-description page carries a clear notice:
 
 You don't need to code — just:
 
-- Browse the HELM workbooks
-- Find an image with a long description link
-- Tell us if it's right, or suggest something better
+::: {.emoji-list}
+- 🌐 Browse the HELM workbooks
+- 🖼️ Find an image with a long description link
+- 💬 Tell us if it's right, or suggest something better
+:::
 
 **Especially valuable from:**
 
-- Maths content experts (is the description mathematically precise?)
-- Accessibility specialists (does it follow best practice?)
-- Screen reader users (is it actually useful?)
+::: {.emoji-list}
+- 🧮 Maths content experts (is the description mathematically precise?)
+- ♿ Accessibility specialists (does it follow best practice?)
+- 🔊 Screen reader users (is it actually useful?)
+:::
 
 ::::
 
