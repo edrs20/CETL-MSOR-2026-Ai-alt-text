@@ -23,18 +23,148 @@ format:
     scrollable: true
 ---
 
+## Background {auto-animate=true}
+
+## Background {auto-animate=true}
+
+📚️ Converting a large library of existing resources.
+
+## Background {auto-animate=true}
+
+📚️ Converting a large library of existing resources.
+
+![](alt-text-meme.jpg){.incremental fig-alt="Clairvoyant meme showing lots of alt text"}
+
+## Background {auto-animate=true}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+📚️ Converting a large library of existing resources.
+
+![](alt-text-meme.jpg){.incremental fig-alt="Clairvoyant meme showing lots of alt text"}
+
+:::
+
+::: {.column width="50%"}
+
+📖 50 workbooks
+
+:::
+
+::::
+
+## Background {auto-animate=true}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+📚️ Converting a large library of existing resources.
+
+![](alt-text-meme.jpg){.incremental fig-alt="Clairvoyant meme showing lots of alt text"}
+
+:::
+
+::: {.column width="50%"}
+
+📖 50 workbooks
+
+👩‍💻 500+ HTML pages
+
+:::
+
+::::
+
+## Background {auto-animate=true}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+📚️ Converting a large library of existing resources.
+
+![](alt-text-meme.jpg){.incremental fig-alt="Clairvoyant meme showing lots of alt text"}
+
+:::
+
+::: {.column width="50%"}
+
+📖 50 workbooks
+
+👩‍💻 500+ HTML pages
+
+🖼️ 924 diagrams & graphs
+:::
+
+::::
+
+## Background {auto-animate=true}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+📚️ Converting a large library of existing resources.
+
+![](alt-text-meme.jpg){.incremental fig-alt="Clairvoyant meme showing lots of alt text"}
+
+:::
+
+::: {.column width="50%"}
+
+📖 50 workbooks
+
+👩‍💻 500+ HTML pages
+
+🖼️ 924 diagrams & graphs
+
+😥 **Zero long descriptions** in the original resource.
+:::
+
+::::
+
+## Background {auto-animate=true}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+📚️ Converting HELM (Help Engineers Learn Mathematics) a large library of existing resources.
+
+![](alt-text-meme.jpg){.incremental fig-alt="Clairvoyant meme showing lots of alt text"}
+
+:::
+
+::: {.column width="50%"}
+
+📖 50 workbooks
+
+👩‍💻 500+ HTML pages
+
+🖼️ 924 diagrams & graphs
+
+😥 **Zero long descriptions** in the original resource.
+
+😰 Each image needs **alt text** *and* a **long description** — and manual authoring at this scale is simply not feasible.
+:::
+
+::::
+
 ## The Problem {background-color="#065A82"}
+
+::: {.quiz-question}
+❓ **Why do we want accessible resources?** 
+:::
 
 :::::: {.columns}
 
 :::: {.column width="58%"}
 
-### Universities have a **legal obligation** to make online content accessible
-
-- **Public Sector Bodies Accessibility Regulations 2018** require all HE website content to meet **WCAG 2.1 AA**
+::: {.incremental}
+- It's the law!
+- It's right thing to do.
+- [⭐ Bonus point]{.bonus} **Public Sector Bodies Accessibility Regulations 2018** require all HE website content to meet **WCAG 2.1 AA**
 - Reinforced by the **Equality Act 2010**, which requires reasonable adjustments to digital content
 - Most HE providers are in scope due to dependence on public funding
 - This includes learning materials — not just institutional websites
+:::
 
 ::: {.fragment}
 > "Almost all internal and external content and systems accessed through a browser fall within scope."
@@ -99,16 +229,36 @@ Each image needs **alt text** *and* a **long description** — and manual author
 
 ## Is HELM still relevant?
 
-:::{.columns}
+:::::: {.columns}
 
-:::: {.column width="40%"}
-![views](views.png){fig-alt="HELM views last 30 days" }
-![locations](locations.png){fig-alt="HELM locations last 30 days" }
+:::: {.column width="50%"}
+![views](views.png){fig-alt="HELM views last 30 days" width="90%"}
 ::::
 
-:::: {.column width="60%"}
-![](topics.png){fig-alt="HELM topcs last 30 days" width="50%"}
+:::: {.column width="50%"}
+![locations](locations.png){fig-alt="HELM locations last 30 days" width="90%"}
 ::::
+
+::::::
+
+## Guess HELM's Most-Viewed Topics
+
+::: {.quiz-question}
+❓ **Which HELM topics do students look at most?** *(shout out your guesses — a match wins a raffle ticket!)*
+:::
+
+::: {.incremental}
+- [⭐ Bonus point]{.bonus} **Mathematical Notation & Symbols** — 300 views, the clear #1
+- Fourier Series — Complex Form (200 views)
+- Repeated Eigenvalues of Symmetric Matrices (200 views)
+- Simplification & Factorisation (200 views) — appeared twice in the raw data, most consistently searched
+- Experimental Design (200 views)
+- Indices (200 views)
+- Parabolic PDEs (200 views)
+:::
+
+::: {.fragment}
+![](topics.png){fig-alt="Screenshot of HELM's most-viewed topics over the last 30 days, ranked by page views" width="55%"}
 :::
 
 ## Get AI to do it?
@@ -188,7 +338,15 @@ The LLM prompt was structured around guidelines from the **DIAGRAM Centre's POET
 
 ---
 
-## The Script: Prompting the Model 
+## Into the Weeds {background-color="#021B40"}
+
+::: {.r-fit-text}
+**Time to get into the weeds 🌿**
+:::
+
+*Next up: the real prompts, code, and output — stick with me.*
+
+## The Script: Prompting the Model
 
 **Problem**: Getting reliable, structured output from an LLM 
 **Solution**: Use **system prompts, user prompts, and JSON mode**

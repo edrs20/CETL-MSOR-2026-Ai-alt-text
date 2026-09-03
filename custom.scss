@@ -127,6 +127,35 @@ $link-color: $primary;   // #065A82 on white = 7.52:1 ✅
   margin-bottom: 0.3em;
 }
 
+// ── Interactive quiz prompts & bonus-answer badges ────────────────────────
+// Shared by "The Problem" and "Guess HELM's Most-Viewed Topics" slides.
+.reveal .quiz-question {
+  display: inline-block;
+  font-size: 1.05em;
+  font-weight: 700;
+  background: rgba(181, 234, 215, 0.15);  // accent tint, decorative only
+  border-left: 4px solid $accent;
+  padding: 0.3em 0.9em;
+  border-radius: 0 6px 6px 0;
+  margin: 0.2em 0 0.6em 0;
+  // white-on-tint (dark slides) = 5.56:1 ✅   text-dark-on-tint (light slides) = 16.36:1 ✅
+}
+
+// "Bonus point" badge — flags the answer worth an extra raffle ticket.
+.reveal .bonus {
+  display: inline-block;
+  background: $accent;
+  color: $dark;              // #021B40 on #B5EAD7 = 12.74:1 ✅
+  border: 1px solid $dark;   // keeps a visible edge on white/light slides too
+  font-weight: 700;
+  font-size: 0.75em;
+  padding: 0.1em 0.6em;
+  border-radius: 999px;
+  margin-right: 0.5em;
+  vertical-align: middle;
+  // accent fill on #065A82 = 5.63:1 ✅   accent fill on #021B40 = 12.74:1 ✅
+}
+
 // ── Footer ────────────────────────────────────────────────────────────────
 // white on slide backgrounds — all pass AA ✅
 .reveal .footer {
