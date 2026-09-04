@@ -23,6 +23,10 @@ format:
     scrollable: true
 ---
 
+## Give me the code!
+
+[The README.md](https://github.com/edrs20/CETL-MSOR-2026-Ai-alt-text) file will tell you were to find the packages.
+
 ## Background {auto-animate=true}
 
 ## Background {auto-animate=true}
