@@ -1,0 +1,7 @@
+beautifulsoup4
+
+# Install the SDK for whichever LLM provider you plan to use:
+# pip install ollama        # local Ollama server, no API key
+# pip install anthropic     # Claude, needs ANTHROPIC_API_KEY
+# pip install openai        # GPT, needs OPENAI_API_KEY
+# pip install google-genai  # Gemini, needs GOOGLE_API_KEY
